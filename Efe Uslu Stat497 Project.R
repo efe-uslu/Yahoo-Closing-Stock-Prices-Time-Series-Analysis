@@ -28,7 +28,6 @@ library(stats)
 
 
 
-yahoo_stock <- read.csv("C:/Users/Efe/Desktop/yahoo_stock.csv",header = TRUE,stringsAsFactors = FALSE)
 yahoo_stock$Date <- as.Date(yahoo_stock$Date)
 time_series_xts <- xts(yahoo_stock$Close, order.by = yahoo_stock$Date)
 plot(time_series_xts, main = "Time Series Data", ylab = "Close", xlab = "Date")
@@ -724,5 +723,6 @@ autoplot(forecasts_tbats)+autolayer(test_ts,series="actual",color="red")+theme_m
 
 #Conclusion
 ###For 5 of the 6 models, accuracy is very close in terms of RMSE. Also, the neural network model does much better than other models when observed visiually through its forecast plot while also giving one of the best RMSE value. The good performance on forecast plot also indicates there exists no over fitting as the model visiually does well. No violation of any assumption is present. Thus, the neural network model is selected to be the best model.
+
 
 
