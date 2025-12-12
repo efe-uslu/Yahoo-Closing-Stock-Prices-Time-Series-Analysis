@@ -1,0 +1,6 @@
+I.	INTRODUCTION
+The time series dataset consists of 1925 daily observations starting from 2015-11-23 until 2020-11-20. The dataset is sourced from Kaggle. It essentially consists of, as the title suggests, the daily closing stock prices. The models fitted are ARIMA, ETS, G/ARCH, Neural Networks, TBATS and Prophet. These models are then sorted with respect to their accuracy metrics and then the best model is selected. For the analysis, R programming language and its packages; TSA, forecast, tibble, urca, pdR, uroot, rugarch and prophet are used. The Neural Networks model is determined to be the best performing model with an RMSE score of 20.54975 and MAE score of 11.92680. Also, every model’s forecast plots were inspected, and Neural Networks model’s plot is also determined to be the best fitting and the most reasonably structure-following of them all. 
+
+II.	GENERAL DESCRIPTION OF THE DATA
+In this segment of the report, the data will be explored, and its structure and behavior will be identified. This includes the inspection of the time series plot of the data which shows the all-time values of closing stock prices, ACF & PACF graphs for further identifications through visual summarizations. 
+<img width="506" height="427" alt="image" src="https://github.com/user-attachments/assets/2fa514f4-eda6-498e-a881-2acf20c0830d" />
